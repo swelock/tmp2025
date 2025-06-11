@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        - BUILDKIT_INLINE_CACHE=1
+    ports:
+      - "12345:12345"
+    restart: unless-stopped
+    volumes:
+      - ./server_data:/app/data
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge 
