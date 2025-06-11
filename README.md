@@ -1,5 +1,7 @@
 # Запуск клиентов в Qt Creator
 
+Примечание: GUI находится здесь
+
 ## Подготовка
 1. Установите Qt Creator и Qt 5.15 или выше
 2. Откройте проект QtClientServer.pro в Qt Creator
